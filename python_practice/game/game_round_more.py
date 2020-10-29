@@ -16,6 +16,7 @@ def fight():
         my_hp = my_hp - enemy_power
         enemy_hp = enemy_hp - my_power
 
+
         #判断谁的血量小于等于0
         if my_hp <= 0:
             print("我输了")
