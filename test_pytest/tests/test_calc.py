@@ -109,3 +109,18 @@ class TestCalc:
         # 括号中为抛出的异常，如果不知道具体的异常就直接使用Exception
         with pytest.raises(Exception):
             assert self.calc.div(i, j)
+
+
+    # 流程实例(先乘后除)
+    def test_process(self):
+        r1 = self.calc.mul(1,2)
+        r2 = self.calc.div(2,1)
+        assert r1 == 2
+        assert r2 == 2
+
+    # 流程实例(先除后乘)
+    def test_process1(self):
+        r1 = self.calc.div(10,2)
+        r2 = self.calc.mul(2,1)
+        assert r1 == 5
+        assert r2 == 2
