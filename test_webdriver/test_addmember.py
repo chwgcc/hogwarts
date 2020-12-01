@@ -48,6 +48,7 @@ class TestWX2:
         self.driver.find_element(By.XPATH,'//*[@class="js_member_editor_form"]/div[3]/a[2]').click()
         # 获取联系人姓名
         name = self.driver.find_element(By.XPATH,'//*[@data-type="member"][1]//td[2]').text
+
         # 断言
         assert "aaa" == name
         sleep(3)
