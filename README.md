@@ -8,3 +8,6 @@
 
 ### web自动化测试实战2作业
 作业路径：./hogwarts_chw/pageobject/homework_po
+
+### 企业微信接口测试实战（一）作业
+作业路径：./hogwarts_chw/service/test_tag.py
